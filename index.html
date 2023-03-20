@@ -1,12 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/imgs/logotype.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
     <title>BR Burgers - Hamburguesas de Barrio</title>
 </head>
+
 <body>
-    
+    <!-- Header -->
+    <nav id="header-navbar" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="br-logo" src="./assets/imgs/logotype.png" alt="BR-Burgers" width="128px" />
+            </a>
+            <button id="button-toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Conocenos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nuestras Burgers</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main -->
+    <main id="body-main">
+        <!-- Hero -->
+        <section class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">📍 Tu Hamburguesería de barrio <br> 🍔🤝🍻</h1>
+                <div class="hero-buttons">
+                    <button class="btn-menu">
+                        <a href="#menu">HACE TU PEDIDO!</a>
+                    </button>
+                    <button class="btn-wsp">
+                        <a target="_blank"
+                            href="https://web.whatsapp.com/send?phone=5491138655857&text=Holaa, ¿Cómo va?%0ASomos BR-BURGERS, Escribe tu Pedido o Consulta aquí...%0A¡Gracias!">CONTACTO</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Marquee -->
+        <marquee class="marquee" scrollamount="10" behavior="scroll" direction="left"> 🍔 BR-BURGERS 🍔 - 🔥 LAS MEJORES
+            DE ZONA NORTE 🔥 - 🕒 Martes a Domingos de 12 a 15 y de 19 a 1am 🕒 - 🏍️ Delivery Propio únicamente turno noche 🏍️ - 📍 Pres. Hipólito Yrigoyen 2483, Florida 📍 - 💳
+            Aceptamos Todos los medios de pago 💳 - ❌ LUNES CERRADO ❌
+        </marquee>
+        <!-- Burgers Section -->
+        <div class="burgers-section">
+            <h4 class="burgers-title">🔥 NUESTRAS HAMBURGUESAS MÁS PEDIDAS 🔥</h4>
+            <h6 class="burgers-subtitle">Descubre parte de nuestro <a
+                    href="https://drive.google.com/file/d/1VgB1HdhK99Tmc9tnXWkShZxuV0aRNdc1/view?fbclid=PAAaaTp3yzA3h_AAnk69NKxc9IY6Ig4kDYj5kPlu7aFbazWgAHbJyhaJiuArQ"
+                    target="_blank">MENÚ</a>✔
+            </h6>
+            <p class="burgers-description">Utilizamos un <span>Blend de Carne 🥩</span> propio y realizamos la
+                producción de Medallones
+                <span>TODOS LOS DÍAS.</span><br>
+                🥇 Priorizamos un producto <span>FRESCO</span> y de <span>PRIMERA CALIDAD</span> 🥇
+            </p>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/imgs/burger-2.jpg" class="d-block w-100" alt="burgers">
+                    <div class="carousel-caption d-md-block">
+                      <h5>Crispy Onion Doble 🍔</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/imgs/burger-2.jpg" class="d-block w-100" alt="burgers">
+                    <div class="carousel-caption d-md-block">
+                      <h5>Bacon Butter Doble 🍔</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/imgs/burger-2.jpg" class="d-block w-100" alt="burgers">
+                    <div class="carousel-caption d-md-block">
+                      <h5>American Doble 🍔</h5>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+        </div>
+
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
