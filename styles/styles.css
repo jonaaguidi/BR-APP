@@ -6,21 +6,21 @@
   --whatsapp-color: #00bb2d;
 }
 
-body{
-    background-color: var(--secondary-color) !important;
+body {
+  background-color: var(--secondary-color) !important;
 }
 
-main{
-    max-width: 1300px;
-    margin: 0 auto;
+main {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
-a{
-    text-decoration: none !important;
+a {
+  text-decoration: none !important;
 }
 
-span{
-    font-weight: bold;
+span {
+  font-weight: bold;
 }
 
 /* NAVBAR */
@@ -109,8 +109,8 @@ span{
   animation: pulse 3s linear infinite;
 }
 
-.btn-menu a{
-    color: whitesmoke;
+.btn-menu a {
+  color: whitesmoke;
 }
 
 .btn-menu::before {
@@ -131,8 +131,8 @@ span{
   font-weight: bold;
 }
 
-.btn-wsp a{
-    color: whitesmoke;
+.btn-wsp a {
+  color: whitesmoke;
 }
 
 .btn-wsp::before {
@@ -160,37 +160,145 @@ span{
   text-transform: uppercase;
 }
 
-
 /* BURGERS SECTION */
 
-.burgers-title{
-    text-align: center;
-    padding: 16px 24px 0px 24px;
-    color: whitesmoke;
-    font-weight: bold;
+.burgers-title {
+  text-align: center;
+  padding: 16px 24px 0px 24px;
+  color: whitesmoke;
+  font-weight: bold;
 }
 
-.burgers-subtitle{
-    text-align: center;
-    color: whitesmoke;
-    font-weight: semibold;
-    text-transform: uppercase;
+.burgers-subtitle {
+  text-align: center;
+  color: whitesmoke;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-.burgers-subtitle a{
-    color: var(--primary-color);
+.burgers-subtitle a {
+  color: var(--primary-color);
+  text-decoration: underline !important;
 }
 
-.burgers-description{
-    text-align: center;
-    padding: 4px 16px 4px 16px;
-    color: whitesmoke;
-    font-size: 16px !important;
-    font-weight: semibold !important;
+.burgers-description {
+  text-align: center;
+  padding: 16px;
+  color: whitesmoke;
+  font-size: 16px !important;
+  font-weight: semibold !important;
 }
 
-.carousel-caption h5{
-    padding: 6px;
-    background-color: #f7af38;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.75);
+#carouselExampleCaptions {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.carousel-item img {
+  border-radius: 12px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-menu_2 {
+  width: 300px;
+  padding: 12px;
+  margin-top: 56px;
+  margin-bottom: 56px;
+  background-color: darkred;
+  border: none;
+}
+
+.btn-menu_2 a {
+  color: whitesmoke !important;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.55);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn-menu_2:active {
+  background-color: var(--primary-color);
+}
+
+.testimonials-container {
+  background-color: var(--primary-color);
+  padding: 24px;
+}
+
+/* TESTIMONIALS SECTION */
+
+#testimonials {
+  padding: 36px 12px;
+}
+
+.testimonials-title {
+  text-align: center;
+  padding: 16px 24px 0px 24px;
+  color: whitesmoke;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.55);
+  font-weight: bold;
+}
+
+.testimonials-subtitle {
+  text-align: center;
+  color: whitesmoke;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.55);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.testimonials-subtitle a {
+  text-decoration: underline !important;
+  color: darkred;
+  text-shadow: none;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 24px;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+}
+
+.testimonial-content {
+  text-align: center;
+  color: whitesmoke;
+}
+
+.testimonial-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.carousel-indicators {
+  bottom: -12px !important;
+}
+
+/* LOCAL SECTION */
+
+.local-section {
+  margin-top: 24px;
+}
+
+.local-title {
+  text-align: center;
+  padding: 16px 24px 0px 24px;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.local-subtitle {
+  text-align: center;
+  padding: 0px 30px;
+  color: whitesmoke;
+  font-weight: bold;
 }
