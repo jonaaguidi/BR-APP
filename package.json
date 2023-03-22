@@ -1,7 +1,7 @@
 {
   "name": "br-burgers-app",
   "version": "1.0.0",
-  "description": "SPA with Cart functions and use of the WhatsApp API to send order messages",
+  "description": "Landing page // SPA with cart functions and use of the WhatsApp API to send order messages, following the Mobile First methodology",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

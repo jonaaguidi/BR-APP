@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-    <title>BR Burgers - Hamburguesas de Barrio</title>
+    <title>BR Burgers - Burgers de Barrio</title>
 </head>
 
 <body>
     <!-- Header -->
     <nav id="header-navbar" class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#hero">
                 <img class="br-logo" src="./assets/imgs/logotype.png" alt="BR-Burgers" width="128px" />
             </a>
             <button id="button-toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -27,16 +27,16 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">INICIO</a>
+                        <a class="nav-link active" href="#hero">INICIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">NUESTRAS BURGERS</a>
+                        <a class="nav-link" href="#burgers">NUESTRAS BURGERS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">RESEÑAS</a>
+                        <a class="nav-link" href="#testimonials">RESEÑAS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">DONDE ESTAMOS?</a>
+                        <a class="nav-link" href="#local">DONDE ESTAMOS?</a>
                     </li>
                 </ul>
             </div>
@@ -45,7 +45,7 @@
     <!-- Main -->
     <main id="body-main">
         <!-- Hero -->
-        <section class="hero-container">
+        <section id="hero" class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">📍 Tu Hamburguesería de barrio <br> 🍔🤝🍻</h1>
                 <div class="hero-buttons">
@@ -66,7 +66,7 @@
             Aceptamos Todos los medios de pago 💳 - ❌ LUNES CERRADO ❌
         </marquee>
         <!-- Burgers Section -->
-        <div class="burgers-section">
+        <div id="burgers" class="burgers-section">
             <h4 class="burgers-title">🔥 NUESTRAS HAMBURGUESAS MÁS PEDIDAS 🔥</h4>
             <h6 class="burgers-subtitle">Descubre parte de nuestro <a
                     href="https://drive.google.com/file/d/1VgB1HdhK99Tmc9tnXWkShZxuV0aRNdc1/view?fbclid=PAAaaTp3yzA3h_AAnk69NKxc9IY6Ig4kDYj5kPlu7aFbazWgAHbJyhaJiuArQ"
@@ -116,7 +116,7 @@
 
         </div>
         <!--Testimonials-->
-        <div class="testimonials-container">
+        <div id="testimonials" class="testimonials-container">
             <h4 class="testimonials-title">🔥 NUESTRAS RESEÑAS DE GOOGLE 🔥</h4>
             <h6 class="testimonials-subtitle">¿Qué opinan sobre nosotros?<br>DEJANOS TU RESEÑA <a
                     href="https://www.google.com/maps/place/BR+Burgers/@-34.5261055,-58.4985175,19z/data=!4m8!3m7!1s0x95bcb12ac7de2707:0x704423c3a2da747d!8m2!3d-34.526908!4d-58.4976617!9m1!1b1!16s%2Fg%2F11p0wr_gs_?hl=es"
@@ -165,7 +165,7 @@
                                 <p>Se ha convertido en la mejor hamburguesería de zona norte. Desde pandemia que pido, y
                                     el este año es mi ritual de viernes. Nunca falla, las hamburguesas son buenísimas.
                                     Si estás tentando en comer una bien potente, nunca defrauda. Cualquiera de las
-                                    variantes son muy buenas. Mis favs son: BR cheese y Big R.</p>
+                                    variantes son muy buenas. Mis favs son: BR cheese y BigR.</p>
                                 <p><strong>- Mateo Sanz Pedemonte -</strong></p>
                             </div>
                         </div>
@@ -174,11 +174,30 @@
             </div>
         </div>
         <!--Local-->
-        <div class="local-section">
+        <div id="local" class="local-section">
             <h4 class="local-title">📍 CONOCE NUESTRO LOCAL 📍</h4>
-            <h6 class="local-subtitle">Proba no solo nuestras BURGERS🍔 sino tambien nuestra CERVEZA🍻 y TRAGOS🍸</h6>
+            <h6 class="local-subtitle">Proba no solo nuestras <strong>BURGERS🍔</strong><br>Sino tambien nuestras <strong>CERVEZAS🍻 y TRAGOS🍸</strong></h6>
+            <h5 class="ubi-title"> Hipólito Yrigoyen 2483, Florida. </h5>
+            <div class="local-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13148.208394992462!2d-58.4976617!3d-34.526908!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb12ac7de2707%3A0x704423c3a2da747d!2sBR%20Burgers!5e0!3m2!1ses-419!2sar!4v1679411913787!5m2!1ses-419!2sar" width="320" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <img src="./assets/imgs/local.jpg" alt="Local" width="320" height="200">
+            </div>
         </div>
-
+         <!--Redes-->
+         <div class="social-container">
+            <h4 class="local-title">📲 NO OLVIDES SEGUIRNOS EN INSTAGRAM 📲</h4>
+            <h6 class="local-subtitle">Si subís una Historia y nos Etiquetas..<br><span>🎁Hay PREMIO🎁</span></h6>
+            <p class="social-ig"><a href="http://instagram.com/br.burgers" target="_blank" rel="noopener noreferrer">@br.burgers</a></p>
+         </div>
+         <!--Footer-->
+         <footer>
+            <div class="logotype">
+                <img src="./assets/imgs/logotype.png" alt="BR-Burgers" width="128px" />
+            </div>
+            <p class="footer-text_1">BR BURGERS | TODOS LOS DERECHOS RESERVADOS ©2023</p>
+            <p class="footer-text_2"><span>Contacto Comercial:</span><br>Ramiro.fd@hotmail.com</p>
+            <p class="development"> Design & Development by <a href="https://www.linkedin.com/in/jonathan-guidi-329365217/" target="_blank">@jonaaguidi</a></p>
+         </footer>
     </main>
 
 
