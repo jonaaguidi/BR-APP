@@ -13,6 +13,8 @@
 
 body {
   background-color: var(--secondary-color) !important;
+  touch-action: manipulation !important;
+  overflow-x: none;
 }
 
 main {
@@ -412,8 +414,31 @@ footer {
 
 .development a {
   color: #cccc !important;
-  text-decoration: underline !important;
 }
+
+/* APP SECTION */
+
+.menu-title{
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 36px;
+  font-family: "FloridaProject" !important;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  color: whitesmoke;
+}
+
+.menu-dropdowns{
+  max-width: 880px;
+  margin: 0 auto;
+  background-color: var(--primary-color);
+}
+
+.menu-dropdowns_item .flecha{
+  content: url("/assets/imgs/flecha-correcta.png");
+}
+
+
 
 /* MEDIAQUERIES-BREAKPOINTS */
 
@@ -433,4 +458,10 @@ footer {
     width: 400px;
     height: 250px;
   }
+}
+
+/* Navigation */
+
+.inactive {
+  display: none;
 }
