@@ -40,7 +40,7 @@ span {
   color: whitesmoke !important;
   font-weight: bold !important;
   letter-spacing: 1.2px;
-  margin-right: 12px;
+  margin-right: 16px;
 }
 
 .nav-link:hover {
@@ -410,6 +410,7 @@ footer {
   color: #cccc;
   border-top: 1px solid rgb(122, 122, 122);
   padding-top: 8px;
+  opacity: 0.4;
 }
 
 .development a {
@@ -418,7 +419,28 @@ footer {
 
 /* APP SECTION */
 
-.menu-title{
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 68px;
+  height: 44px;
+  padding: 16px 20px 16px 20px;
+  margin-left: 44px;
+  background-color: var(--primary-color);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: none;
+  border-radius: 10px;
+}
+
+.cart img {
+  margin-top: 2px;
+  margin-right: 4px;
+  width: 32px;
+  height: 32px;
+}
+
+.menu-title {
   text-align: center;
   padding-top: 32px;
   padding-bottom: 36px;
@@ -428,17 +450,115 @@ footer {
   color: whitesmoke;
 }
 
-.menu-dropdowns{
+.menu-dropdowns {
   max-width: 880px;
   margin: 0 auto;
+  padding: 20px;
   background-color: var(--primary-color);
+  border-radius: 3px;
 }
 
-.menu-dropdowns_item .flecha{
-  content: url("/assets/imgs/flecha-correcta.png");
+.menu-dropdowns_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 8px 16px 8px;
+  background-color: var(--secondary-color);
+  border-bottom: 4px solid var(--primary-color);
+  border-radius: 10px;
+  cursor: pointer;
 }
 
+.menu-dropdowns_subItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px;
+  background-color: darkred;
+  border-bottom: 4px solid var(--primary-color);
+  border-radius: 10px;
+  cursor: pointer;
+}
 
+.menu-dropdowns_text {
+  font-family: "FloridaProject";
+  padding-top: 12px;
+  margin-left: 16px;
+  color: whitesmoke;
+  font-size: medium;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 3px 4px 15px rgba(0, 0, 0, 0.75);
+}
+
+#arrow {
+  width: 28px;
+  margin-bottom: 4px;
+  margin-right: 16px;
+  padding: 6px;
+  background-color: var(--primary-color);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 50%;
+}
+
+.menu-dropdowns_card {
+  padding: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  border-bottom: 6px solid var(--primary-color);
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  text-align: center;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  font-family: "FloridaProject";
+  letter-spacing: 1.5px;
+}
+
+.title-icon {
+  margin-right: 12px;
+  margin-bottom: 8px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: white;
+}
+
+.addToCart{
+  max-width: 180px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: whitesmoke;
+  font-size: medium;
+  font-weight: 500;
+  text-shadow: 3px 4px 15px rgba(0, 0, 0, 0.75);
+}
+
+/* Navigation - ETC */
+
+.inactive {
+  display: none;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease-in-out; 
+}
 
 /* MEDIAQUERIES-BREAKPOINTS */
 
@@ -458,10 +578,4 @@ footer {
     width: 400px;
     height: 250px;
   }
-}
-
-/* Navigation */
-
-.inactive {
-  display: none;
 }

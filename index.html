@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
@@ -40,6 +40,10 @@
                     </li>
                 </ul>
             </div>
+            <button class="cart" id="cart">
+                <img src="./assets/imgs/cart.svg" alt="cart">
+                <span id="count-cart">0</span>
+            </button>
         </div>
     </nav>
     <!-- Main -->
@@ -49,7 +53,7 @@
             <div class="hero-content">
                 <h1 class="hero-title">📍 Tu Hamburguesería de barrio <br> 🍔🤝🍻</h1>
                 <div class="hero-buttons">
-                    <button id="button-menu" class="btn-menu">
+                    <button id="button-CTA" class="btn-menu">
                         HACE TU PEDIDO!
                     </button>
                     <button class="btn-wsp">
@@ -60,7 +64,8 @@
             </div>
         </section>
         <!-- Marquee -->
-        <marquee class="marquee" scrollamount="10" behavior="scroll" direction="left"> 🍔 BR-BURGERS 🍔 - 🔥 LAS MEJORES
+        <marquee loop="infinite" class="marquee" scrollamount="10" behavior="scroll" direction="left"> 🍔 BR-BURGERS 🍔
+            - 🔥 LAS MEJORES
             DE ZONA NORTE 🔥 - 🕒 Martes a Domingos de 12 a 15 y de 19 a 1am 🕒 - 🏍️ Delivery Propio únicamente turno
             noche 🏍️ - 📍 Pres. Hipólito Yrigoyen 2483, Florida 📍 - 💳
             Aceptamos Todos los medios de pago 💳 - ❌ LUNES CERRADO ❌
@@ -68,7 +73,7 @@
         <!-- Burgers Section -->
         <div id="burgers" class="burgers-section">
             <h4 class="burgers-title">🔥 NUESTRAS HAMBURGUESAS MÁS PEDIDAS 🔥</h4>
-            <h6 class="burgers-subtitle">Descubre parte de nuestro <a
+            <h6 class="burgers-subtitle">Descubre nuestro <a
                     href="https://drive.google.com/file/d/1VgB1HdhK99Tmc9tnXWkShZxuV0aRNdc1/view?fbclid=PAAaaTp3yzA3h_AAnk69NKxc9IY6Ig4kDYj5kPlu7aFbazWgAHbJyhaJiuArQ"
                     target="_blank">MENÚ</a>✔</h6>
             <p class="burgers-description">Utilizamos un <span>Blend de Carne 🥩</span> propio y realizamos la
@@ -191,23 +196,65 @@
         <!--Redes-->
         <div class="social-container">
             <h4 class="local-title">📲 NO OLVIDES SEGUIRNOS EN INSTAGRAM 📲</h4>
-            <h6 class="local-subtitle">Si subís una Historia y nos Etiquetas..<br><span>🎁Hay PREMIO🎁</span></h6>
             <p class="social-ig"><a href="http://instagram.com/br.burgers" target="_blank"
                     rel="noopener noreferrer">@br.burgers</a></p>
         </div>
     </main>
     <!--APP MENU-->
+
     <div class="menu-app" id="menu-app">
         <h3 class="menu-title">👇 Hace tu pedido AQUI 👇</h3>
         <div class="menu-dropdowns">
-            <div class="menu-dropdowns_item">Burgers<span class="flecha"></span></div>
+            <div class="menu-dropdowns_container">
+                <div id="burgers-container" class="menu-dropdowns_item">
+                    <p class="menu-dropdowns_text">Burgers</p>
+                    <img id="arrow" src="./assets/imgs/arrow.svg" alt="arrow">
+                </div>
+                <div id="menu-dropdowns_subItem_1" class="menu-dropdowns_subItem inactive">
+                    <p class="menu-dropdowns_text">Simples</p>
+                    <img id="arrow" src="./assets/imgs/arrow.svg" alt="arrow">
+                </div>
+                <div id="burgers-simples" class="burgers inactive">
+                </div>
+                <div id="menu-dropdowns_subItem_2" class="menu-dropdowns_subItem inactive">
+                    <p class="menu-dropdowns_text">Dobles - Triples</p>
+                    <img id="arrow" src="./assets/imgs/arrow.svg" alt="arrow">
+                </div>
+                <div id="burgers-dobles" class="burgers inactive">
+                </div>
+                <div id="menu-dropdowns_subItem_3" class="menu-dropdowns_subItem inactive">
+                    <p class="menu-dropdowns_text">Veggies</p>
+                    <img id="arrow" src="./assets/imgs/arrow.svg" alt="arrow">
+                </div>
+                <div id="burgers-veggies" class="burgers inactive">
+                </div>
+                <div class="menu-dropdowns_item" id="entradas-container">
+                    <p class="menu-dropdowns_text">Entradas</p>
+                    <img id="arrow" src="./assets/imgs/arrow.svg" alt="arrow">
+                </div>
+                <div id="entradas" class="burgers inactive">
+                </div>
+                <div class="menu-dropdowns_item">
+                    <p class="menu-dropdowns_text">Salsas</p>
+                    <img id="arrow" src="./assets/imgs/arrow.svg" alt="arrow">
+                </div>
+                <div class="menu-dropdowns_item">
+                    <p class="menu-dropdowns_text">Bebidas</p>
+                    <img id="arrow" src="./assets/imgs/arrow.svg" alt="arrow">
+                </div>
+                <div class="menu-dropdowns_item">
+                    <p class="menu-dropdowns_text">Postres</p>
+                    <img id="arrow" src="./assets/imgs/arrow.svg" alt="arrow">
+                </div>
+            </div>
         </div>
+
     </div>
     </div>
     <!--Footer-->
     <footer>
         <div class="logotype">
-            <img src="./assets/imgs/logotype.png" alt="BR-Burgers" width="128px" />
+            <img src="./assets/imgs/logotype.png" alt="BR-Burgers" width="136px" />
         </div>
         <p class="footer-text_1">BR BURGERS | TODOS LOS DERECHOS RESERVADOS ©2023</p>
         <p class="footer-text_2"><span>Contacto Comercial:</span><br>Ramiro.fd@hotmail.com</p>
@@ -216,10 +263,9 @@
     </footer>
     <script src="./src/nodes.js"></script>
     <script src="./src/navigation.js"></script>
-    <script src="./src/main.js"></script>
+    <script src="./src/renderProducts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
