@@ -93,7 +93,7 @@ subItem3.addEventListener("click", function () {
   }
 });
 
-// Dropdowns Burgers.
+// Dropdowns ENTRADAS.
 let mostrarDivs5 = false;
 
 entradasContainer.addEventListener("click", function () {
@@ -102,5 +102,41 @@ entradasContainer.addEventListener("click", function () {
     entradasElement.classList.remove("inactive");
   } else {
     entradasElement.classList.add("inactive");
+  }
+});
+
+// Dropdown SALSAS.
+let mostrarDivs6 = false;
+
+salsasContainer.addEventListener("click", function () {
+  mostrarDivs6 = !mostrarDivs6;
+  if (mostrarDivs6) {
+    salsasElement.classList.remove("inactive");
+  } else {
+    salsasElement.classList.add("inactive");
+  }
+});
+
+// Dropdown BEBIDAS.
+let mostrarDivs7 = false;
+
+bebidasContainer.addEventListener("click", function () {
+  mostrarDivs7 = !mostrarDivs7;
+  if (mostrarDivs7) {
+    bebidasElement.classList.remove("inactive");
+  } else {
+    bebidasElement.classList.add("inactive");
+  }
+});
+
+// Dropdown BEBIDAS.
+let mostrarDivs8 = false;
+
+postresContainer.addEventListener("click", function () {
+  mostrarDivs8 = !mostrarDivs8;
+  if (mostrarDivs8) {
+    postresElement.classList.remove("inactive");
+  } else {
+    postresElement.classList.add("inactive");
   }
 });

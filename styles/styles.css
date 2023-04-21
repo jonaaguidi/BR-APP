@@ -427,6 +427,7 @@ footer {
   height: 44px;
   padding: 16px 20px 16px 20px;
   margin-left: 44px;
+  margin-right: 12px;
   background-color: var(--primary-color);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border: none;
@@ -527,6 +528,7 @@ footer {
   align-items: center;
   font-family: "FloridaProject";
   letter-spacing: 1.5px;
+  border-bottom: 1px solid whitesmoke;
 }
 
 .title-icon {
@@ -537,16 +539,59 @@ footer {
   background-color: white;
 }
 
+.price-entradas{
+  margin-top: -12px;
+  font-size: 16px;
+}
+
+#addToCart{
+  max-width: 180px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary-color) !important;
+  color: whitesmoke;
+  font-size: medium;
+  font-weight: 500;
+  text-shadow: 3px 4px 15px rgba(0, 0, 0, 0.75);
+}
+
 .addToCart{
   max-width: 180px;
   padding: 8px 20px;
   border: none;
   border-radius: 8px;
-  background-color: var(--primary-color);
+  background-color: var(--primary-color) !important;
   color: whitesmoke;
   font-size: medium;
   font-weight: 500;
   text-shadow: 3px 4px 15px rgba(0, 0, 0, 0.75);
+}
+
+.modal-content{
+  padding: 16px;
+}
+
+.modal-header{
+  border-bottom: none !important;
+}
+
+.modal-body{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal-body button{
+  background-color: var(--primary-color);
+  padding: 8px 12px 8px 12px;
+  letter-spacing: 1px;
+  border:none;
+}
+
+.modal-body button:active{
+  background-color: green;
 }
 
 /* Navigation - ETC */
